@@ -4,28 +4,24 @@
             <title>Project</title>
             <meta charset="utf-8">
             <script src="Project.js" type="text/javascript" defer></script>
-            <style>
-                canvas {
-                    background-image: url("image/background.png");
-                    background-size: 1000px 750px;
-                    
-                    background-repeat: no-repeat;
-                }
-                div {
-                    float: right;
-                    margin-right: 50px;
-                }
-                input {
-                    width: 80px;
-                    height: 30px;
-                }
-            </style>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+            <link rel="stylesheet" href="style.css">
         </head>
         <body onkeydown="control(event)" id="control">
-            <canvas id="drawing" style="border-style:solid" width="1000px" height="750px" ></canvas>
-            <div>
-                <input type="button" value="play" id="play" onclick="play()">
-                <input type="button" value="pause" id="pause" onclick="pause()">
+            <nav class="navbar navbar-dark bg-primary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Airship</a>
+                </div>
+            </nav>
+            <div class="container">
+                <div id="canvas">
+                    <canvas id="drawing" style="border-style:solid" width="1000px" height="750px" ></canvas>
+                </div>
+                <div id="buttons">
+                    <button type="button"  value="play" id="play" onclick="play()" class="btn btn-primary">Start</button>
+                    <button type="button"  value="pause" id="pause" onclick="pause()" class="btn btn-dark">Pause</button>
+                </div>
             </div>
+
         </body>
     </html>

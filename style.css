@@ -1,0 +1,23 @@
+canvas {
+    background-image: url("image/background.png");
+    background-size: 1000px 750px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+#canvas{
+    display: flex;
+    justify-content: center;
+}
+#buttons {
+    display: flex;
+    margin-top: 1%;
+    justify-content: center;
+}
+#buttons > button{
+    margin: 5px;
+}
+.container {
+    margin-top: 3%;
+    align-content: center;
+}
