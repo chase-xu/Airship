@@ -17,6 +17,7 @@ let defeated = 0;
 let angle = 0;
 let xx = 0;
 let yy = 0;
+
 function control(event) {
     let key = event.keyCode;
     if(on == 1) {
